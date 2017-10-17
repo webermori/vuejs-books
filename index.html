@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Book List With Vue JS</title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'/>
 </head>
 <body id="app">
     <div class="container">
@@ -26,12 +27,12 @@
         </div>
         <br>
         <table class="table table-striped table-bordered">
-            <thead class="thead-inverse">
+            <thead>
                 <tr>
-                    <th><a href="#" @click="filterOrderBy($event, 'id')">Id</a></th>
-                    <th>Title</th>
-                    <th>Value</th>
-                    <th>Description</th>
+                    <th><a href="#" @click="filterOrderBy($event, 'id')"><i class="fa fa-fw fa-sort"></i> Id</a></th>
+                    <th><a href="#" @click="filterOrderBy($event, 'title')"><i class="fa fa-fw fa-sort"></i> Title</a></th>
+                    <th><a href="#" @click="filterOrderBy($event, 'value')"><i class="fa fa-fw fa-sort"></i> Value</a></th>
+                    <th><a href="#" @click="filterOrderBy($event, 'description')"><i class="fa fa-fw fa-sort"></i> Description</a></th>
                 </tr>
             </thead>
             <tbody>

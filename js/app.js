@@ -7,9 +7,10 @@ var app = new Vue({
         orderInverse: 1
     },
     methods: {
-        // filterOrderBy: function(e, col){
-        //     this.orderCol = col;
-        // }
+        filterOrderBy: function(e,col){
+            this.orderCol = col;
+            this.orderInverse = this.orderInverse * -1;
+        }
     },
     ready:function(){
         var self = this;
